@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 import os
 
-st.title("EcoFreak - Your Environmentalist Chatbot using Generative AI")
+st.title("EcoFreak - An Environmentally conscious Chatbot using Generative AI")
 
 GOOGLE_API_KEY = st.text_input("Enter your Google API Key:")
 
