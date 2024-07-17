@@ -100,7 +100,7 @@ if GOOGLE_API_KEY:
                     genai.upload_file(temp_file_path),
                     default_prompt
                 ]
-                st.subheader("Crop Disease Prediction Result")
+                st.subheader("Plant Care Result")
                 generate_content(prompt_parts)
 
 else:
