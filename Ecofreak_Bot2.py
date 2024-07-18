@@ -7,7 +7,7 @@ st.title("Google Generative AI Content Generator")
 
 # Input for Google API Key
 #GOOGLE_API_KEY = st.text_input("Enter your Google API key:", type="password")
-GOOGLE_API_KEY = 'AIzaSyD2u8dtmeseLX_mMtCbCWYCXMMDdvL4b_4'
+GOOGLE_API_KEY = 'AIzaSyBXq-1xtb_0jNdhw-CdW7b7SLnghzrycaQ'
 
 # Generation configuration
 generation_config = {
