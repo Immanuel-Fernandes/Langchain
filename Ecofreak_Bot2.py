@@ -35,7 +35,8 @@ if GOOGLE_API_KEY:
     genai.configure(api_key=GOOGLE_API_KEY)
 
     #Menu
-    tab1, tab2, tab3 = st.tabs(["Environmental Query", "Crop Disease Prediction", "Plant Care"])
+    tab1, tab2, tab3, tab4 = st.tabs(["Environmental Query", "Crop Disease Prediction", "Plant Care", "FAQ"])
+
 
     with tab1:
         st.header("Environmental Query")
@@ -104,6 +105,27 @@ if GOOGLE_API_KEY:
                 ]
                 st.subheader("Plant Care Result")
                 generate_content(prompt_parts)
+
+    with tab4:
+        st.header("FAQ")
+
+        # Embed the YouTube video
+        st.write("**Video Tutorial**")
+        st.video("https://youtu.be/XOCjPsALTcM")
+        
+        st.write("""
+        **1. How to use the Environmental Query tab?**
+        - Enter your question about environmental preservation in the text input field.
+        - Click on "Check how to Conserve" to get the result.
+
+        **2. How to use the Crop Disease Prediction tab?**
+        - Upload an image of the crop.
+        - Click on "Detect Image" to get the disease prediction and recommendations.
+
+        **3. How to use the Plant Care tab?**
+        - Upload an image of the plant.
+        - Click on "Identify Plant" to get information about the plant and care instructions.
+        """)
 
 else:
     st.error("Please enter a valid Google API key.")
