@@ -112,10 +112,8 @@ if GOOGLE_API_KEY:
         # Embed the YouTube video
         st.write("**Video Tutorial**")
 
-        video_width = 800
-        video_height = int(video_width * 9 / 16)
-        st.video("https://youtu.be/XOCjPsALTcM", width=video_width)
         #st.video("https://youtu.be/XOCjPsALTcM")
+        st.video("https://www.youtube.com/embed/XOCjPsALTcM?si=ltOstWKvjWrY_er9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen")
         
         st.write("""
         **1. How to use the Environmental Query tab?**
