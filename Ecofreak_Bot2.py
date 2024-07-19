@@ -3,7 +3,9 @@ import google.generativeai as genai
 from PIL import Image
 import tempfile
 
-st.title("Google Generative AI Content Generator")
+#st.title("Google Generative AI Content Generator")
+
+st.title("Ecofreak AI Content Generator")
 
 # Input for Google API Key
 #GOOGLE_API_KEY = st.text_input("Enter your Google API key:", type="password")
