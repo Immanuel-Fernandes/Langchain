@@ -108,11 +108,6 @@ if GOOGLE_API_KEY:
 
     with tab4:
         st.header("FAQ")
-
-        # Embed the YouTube video
-        st.write("**Video Tutorial**")
-
-        st.video("https://youtu.be/XOCjPsALTcM")
        
         st.write("""
         **1. How to use the Environmental Query tab?**
@@ -127,6 +122,10 @@ if GOOGLE_API_KEY:
         - Upload an image of the plant.
         - Click on "Identify Plant" to get information about the plant and care instructions.
         """)
+        
+        # Embed the YouTube video
+        st.write("**Video Tutorial**")
+        st.video("https://youtu.be/XOCjPsALTcM")
 
 else:
     st.error("Please enter a valid Google API key.")
