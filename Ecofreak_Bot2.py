@@ -112,9 +112,8 @@ if GOOGLE_API_KEY:
         # Embed the YouTube video
         st.write("**Video Tutorial**")
 
-        #st.video("https://youtu.be/XOCjPsALTcM")
-        st.video(<iframe width="560" height="315" src="https://www.youtube.com/embed/XOCjPsALTcM?si=ltOstWKvjWrY_er9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
-        
+        st.video("https://youtu.be/XOCjPsALTcM")
+       
         st.write("""
         **1. How to use the Environmental Query tab?**
         - Enter your question about environmental preservation in the text input field.
