@@ -18,7 +18,7 @@ GOOGLE_API_KEY = 'AIzaSyBXq-1xtb_0jNdhw-CdW7b7SLnghzrycaQ'
 # Stability AI API Key: https://platform.stability.ai/account/keys
 STABILITY_API_KEY = 'sk-z6Kj18xNpMMFVOo4O93z8cCrxcYgXzTSSnvw3jlmtJu0p35z'
 
-# Cohere API key
+# Cohere API Key: https://dashboard.cohere.com/api-keys
 COHERE_API_KEY = "QLFI6zjXBG3iIxMCuw0WhHfuD7PtYit9uVLMOeBh"
 
 # Gemini
