@@ -187,7 +187,7 @@ if GOOGLE_API_KEY:
     with tab6:
         st.header("FAQ")
         st.write("""
-        **1. How to use the Environmental Query tab?**
+        **1. How to use the EcoFreak Chatbot tab?**
         - Enter your question about environmental preservation in the text input field.
         - Click on "Check how to Conserve" to get the result.
 
