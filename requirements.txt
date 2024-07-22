@@ -1,3 +1,5 @@
+
+requests
 streamlit
 google-generativeai
 Pillow
