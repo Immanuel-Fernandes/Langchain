@@ -1,23 +1,27 @@
-import cohere
 import streamlit as st
+import google.generativeai as genai
+import cohere
 from langchain import LLMChain
 from langchain.llms import Cohere as LangchainCohere
 from langchain.prompts import PromptTemplate
-import google.generativeai as genai
-from PIL import Image
 import tempfile
 import base64
 import requests
+from PIL import Image
 from io import BytesIO
 
-# Google API Key
+# Keys 
+
+# Google API Key: https://ai.google.dev/gemini-api/docs/api-key
 GOOGLE_API_KEY = 'AIzaSyBXq-1xtb_0jNdhw-CdW7b7SLnghzrycaQ'
 
-# Stability AI API Key
+# Stability AI API Key: https://platform.stability.ai/account/keys
 STABILITY_API_KEY = 'sk-z6Kj18xNpMMFVOo4O93z8cCrxcYgXzTSSnvw3jlmtJu0p35z'
 
 # Cohere API key
 COHERE_API_KEY = "QLFI6zjXBG3iIxMCuw0WhHfuD7PtYit9uVLMOeBh"
+
+# Gemini
 
 # Generation configuration
 generation_config = {
@@ -38,6 +42,8 @@ def generate_content(prompt):
     except Exception as e:
         st.error(f"Exception:\n {e} \n")
         st.write("Response:\n", response.candidates)
+
+# Stability
 
 def generate_image(prompt, api_key):
     url = "https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image"
@@ -77,6 +83,8 @@ def generate_image(prompt, api_key):
     image_data = base64.b64decode(data["artifacts"][0]["base64"])
     image = Image.open(BytesIO(image_data))
     return image
+
+# Cohere
 
 llm = LangchainCohere(cohere_api_key=COHERE_API_KEY)
 
