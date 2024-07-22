@@ -101,11 +101,11 @@ if GOOGLE_API_KEY:
     genai.configure(api_key=GOOGLE_API_KEY)
 
     # Menu
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["EcoFreak Chatbot", "Crop Disease Prediction", "Reduce Carbon Footprints", "Plant Care", "Future Imagination", "FAQ"])
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Environmental Query", "Crop Disease Prediction", "Reduce Carbon Footprints", "Plant Care", "Future Imagination", "FAQ"])
 
     
     with tab1:
-        st.header("EcoFreak Chatbot")
+        st.header("Environmental Query")
         default_prompt = "How to Conserve Environment and How do I best take care of it?"
         user_text_question = st.text_input("Enter your question about environmental preservation:")
         user_text_question = user_text_question + default_prompt
@@ -187,7 +187,7 @@ if GOOGLE_API_KEY:
     with tab6:
         st.header("FAQ")
         st.write("""
-        **1. How to use the EcoFreak Chatbot tab?**
+        **1. How to use the Environmental Query tab?**
         - Enter your question about environmental preservation in the text input field.
         - Click on "Check how to Conserve" to get the result.
 
